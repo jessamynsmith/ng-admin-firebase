@@ -4,7 +4,7 @@
   "authors": [
     "Jessamyn Smith <geekchick77@gmail.com>"
   ],
-  "description": "",
+  "description": "A simple starter project for AngularJS",
   "main": "",
   "moduleType": [],
   "keywords": [
@@ -12,7 +12,7 @@
     "start"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/jessamynsmith/angular-starter-project",
   "ignore": [
     "**/.*",
     "node_modules",
