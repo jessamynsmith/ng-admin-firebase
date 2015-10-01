@@ -20,11 +20,13 @@ angular.module('ngAdminFirebase', ['ng-admin'])
       }
       return url;
     });
+
     //TODO Fix sorting of list view
     author.listView().fields([
       nga.field('name'),
-    ]);
-    // TODO for some reason clicking list to see individual items isn't working
+    ])
+      .listActions(['show']);
+
     author.showView().fields([
       nga.field('name'),
       nga.field('birth_year'),
