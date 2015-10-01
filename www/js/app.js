@@ -71,34 +71,39 @@ angular.module('ngAdminFirebase', ['ng-admin'])
 
     RestangularProvider.addResponseInterceptor(function(data, operation, what, url, response, deferred) {
       var results = data;
-      if (Object.prototype.toString.call(results) !== '[object Array]') {
-        // transform object to array
-        results = [];
-        for (var property in data) {
-          if (data.hasOwnProperty(property)) {
-            results.push(data[property]);
+
+      if (operation == "getList") {
+        if (Object.prototype.toString.call(results) !== '[object Array]') {
+          // transform object to array
+          results = [];
+          for (var property in data) {
+            if (data.hasOwnProperty(property)) {
+              results.push(data[property]);
+            }
           }
         }
-      }
 
-      var sortField = response.config.params["_sortField"];
-      var sortDirection = response.config.params["_sortDir"];
-      var lessThanResult = -1;
-      var greaterThanResult = 1;
-      if (sortDirection == "DESC") {
-        lessThanResult = 1;
-        greaterThanResult = -1;
-      }
-      var compareSortFields = function(a, b) {
-        if (a[sortField] < b[sortField])
-          return lessThanResult;
-        if (a[sortField] > b[sortField])
-          return greaterThanResult;
-        return 0;
-      };
+        if (response.config.params && response.config.params._sortField) {
+          var sortField = response.config.params._sortField;
+          var sortDirection = response.config.params._sortDir;
+          var lessThanResult = -1;
+          var greaterThanResult = 1;
+          if (sortDirection == "DESC") {
+            lessThanResult = 1;
+            greaterThanResult = -1;
+          }
+          var compareSortFields = function(a, b) {
+            if (a[sortField] < b[sortField])
+              return lessThanResult;
+            if (a[sortField] > b[sortField])
+              return greaterThanResult;
+            return 0;
+          };
 
-      if (results[0].hasOwnProperty(sortField)) {
-        results.sort(compareSortFields);
+          if (results[0].hasOwnProperty(sortField)) {
+            results.sort(compareSortFields);
+          }
+        }
       }
 
       return results;
