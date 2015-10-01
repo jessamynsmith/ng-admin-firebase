@@ -1,10 +1,10 @@
 {
-  "name": "angular-starter-project",
+  "name": "ng-admin-firebase",
   "version": "0.0.1",
   "authors": [
     "Jessamyn Smith <geekchick77@gmail.com>"
   ],
-  "description": "A simple starter project for AngularJS",
+  "description": "A sample ng-admin app displaying data from firebase",
   "main": "",
   "moduleType": [],
   "keywords": [
@@ -12,7 +12,7 @@
     "start"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/jessamynsmith/angular-starter-project",
+  "homepage": "https://github.com/jessamynsmith/ng-admin-firebase",
   "ignore": [
     "**/.*",
     "node_modules",

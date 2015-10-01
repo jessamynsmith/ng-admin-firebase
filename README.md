@@ -1,7 +1,7 @@
-angular-starter-project
-=======================
+ng-admin-firebase
+=================
 
-A simple starter project for AngularJS
+A sample ng-admin app displaying data from firebase
 
 You can see a running example hosted on [firebase](https://ng-admin-starter.firebaseapp.com/#/authors/list).
 

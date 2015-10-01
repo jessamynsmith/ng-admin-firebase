@@ -1,7 +1,7 @@
 {
-  "name": "angular-starter-project",
-  "version": "1.0.0",
-  "description": "A simple starter project for AngularJS",
+  "name": "ng-admin-firebase",
+  "version": "0.0.1",
+  "description": "A sample ng-admin app displaying data from firebase",
   "keywords": [
     "angular",
     "start",
@@ -11,6 +11,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jessamynsmith/angular-starter-project"
+    "url": "https://github.com/jessamynsmith/ng-admin-firebase"
   }
 }

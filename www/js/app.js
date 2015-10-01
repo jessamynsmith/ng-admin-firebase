@@ -4,8 +4,7 @@
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // the 2nd parameter is an array of 'requires'
-//var app = angular.module('angularStarterProject', ['ui.router', 'angularStarterProject.controllers'])
-angular.module('angularStarterProject', ['ng-admin'])
+angular.module('ngAdminFirebase', ['ng-admin'])
 
   .config(['NgAdminConfigurationProvider', function(NgAdminConfigurationProvider) {
     var nga = NgAdminConfigurationProvider;
