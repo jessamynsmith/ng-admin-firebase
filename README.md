@@ -6,11 +6,22 @@ A simple starter project for AngularJS
 
 Development
 -----------
-    
+  
+1. Install dependencies
+
     npm install
     bower install
     
-    Open index.html in a browser
+1. Sign up for a firebase account and create some data
+
+1. Verify that your data is readable without logging in, using curl on the command line:
+
+		curl -v -k -X GET -H "Content-Type: application/json" https://ng-admin-starter.firebaseio.com/authors.json?
+
+1. Edit app.js to point to your firebase data, and modify the entity to match yours.
+
+1. Open index.html in a browser
+
 
 Continuous Integration
 ----------------------
