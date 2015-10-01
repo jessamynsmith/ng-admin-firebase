@@ -3,14 +3,16 @@ angular-starter-project
 
 A simple starter project for AngularJS
 
+You can see a running example hosted on [firebase](https://ng-admin-starter.firebaseapp.com/#/authors/list).
+
 
 Development
 -----------
   
 1. Install dependencies
 
-    npm install
-    bower install
+		npm install
+		bower install
     
 1. Sign up for a firebase account and create some data
 

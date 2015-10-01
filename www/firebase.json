@@ -1,0 +1,9 @@
+{
+  "firebase": "ng-admin-starter",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
